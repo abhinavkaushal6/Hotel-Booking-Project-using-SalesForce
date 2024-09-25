@@ -20,6 +20,7 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.tmp
 
 # Dependency directories
 node_modules/
@@ -35,6 +36,15 @@ Thumbs.db
 ehthumbs.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
+
+# Any zip or backup files
+*.zip
+*.bak
+
+# Force.com IDE specific files (if you used them earlier)
+.project
+.classpath
+.settings/
 
 # Local environment variables
 .env
