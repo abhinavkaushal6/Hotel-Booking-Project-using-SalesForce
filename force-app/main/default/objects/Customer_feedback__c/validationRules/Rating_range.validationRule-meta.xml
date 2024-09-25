@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rating_range</fullName>
+    <active>true</active>
+    <errorConditionFormula>(Food_Quality_Rating__c &lt;0 || Food_Quality_Rating__c &gt;10)|| (Payment_procedure_and_see_off__c &lt;0 ||  Payment_procedure_and_see_off__c &gt;10)|| (welcome_and_Hospitality_Service_Rating__c &lt;0 ||  welcome_and_Hospitality_Service_Rating__c &gt;10)|| (Overall_Rating_of_the_hotel__c &lt;0 || Overall_Rating_of_the_hotel__c &gt;10)||(Cleaning_service_Remarks__c &lt;0 ||Cleaning_service_Remarks__c &gt;10)</errorConditionFormula>
+    <errorMessage>Rating Should be in the range 0 -10</errorMessage>
+</ValidationRule>

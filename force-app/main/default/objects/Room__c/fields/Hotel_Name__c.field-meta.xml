@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hotel_Name__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>Hotel Name</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Rooms</relationshipLabel>
+    <relationshipName>Rooms</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

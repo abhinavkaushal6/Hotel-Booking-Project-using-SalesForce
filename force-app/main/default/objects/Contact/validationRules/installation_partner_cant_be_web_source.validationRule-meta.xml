@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>installation_partner_cant_be_web_source</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(Account.Type ,&apos;Installation Partner&apos;)   &amp;&amp;  ISPICKVAL(LeadSource,&apos;Web&apos;)</errorConditionFormula>
+    <errorMessage>INSTALLATION PARTNER CANT HAVE SOURCE AS &quot;WEB&quot;</errorMessage>
+</ValidationRule>

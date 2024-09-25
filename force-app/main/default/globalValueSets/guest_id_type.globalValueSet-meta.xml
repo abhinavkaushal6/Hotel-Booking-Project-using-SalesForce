@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Aadhaar card</fullName>
+        <default>false</default>
+        <label>Aadhaar card</label>
+    </customValue>
+    <customValue>
+        <fullName>Pan card</fullName>
+        <default>false</default>
+        <label>Pan card</label>
+    </customValue>
+    <customValue>
+        <fullName>Voter ID Card</fullName>
+        <default>false</default>
+        <label>Voter ID Card</label>
+    </customValue>
+    <customValue>
+        <fullName>Drivers License</fullName>
+        <default>false</default>
+        <label>Drivers License</label>
+    </customValue>
+    <customValue>
+        <fullName>Passport</fullName>
+        <default>false</default>
+        <label>Passport</label>
+    </customValue>
+    <masterLabel>guest id type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

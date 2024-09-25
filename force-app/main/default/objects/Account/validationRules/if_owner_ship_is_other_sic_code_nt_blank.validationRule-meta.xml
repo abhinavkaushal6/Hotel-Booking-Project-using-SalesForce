@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>if_owner_ship_is_other_sic_code_nt_blank</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL( Ownership , &apos;other&apos;) &amp;&amp;  ISBLANK( Sic )</errorConditionFormula>
+    <errorMessage>FOR &quot;OTHER&quot; OWNERSHIP SIC SHOULD EXIST</errorMessage>
+</ValidationRule>

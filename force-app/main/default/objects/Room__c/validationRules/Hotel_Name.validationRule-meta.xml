@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hotel_Name</fullName>
+    <active>true</active>
+    <description>The Hotel name should have &quot;Hotel&quot; or &quot;Resort&quot; or &quot;Inn&quot; as a keyword.</description>
+    <errorConditionFormula>NOT(
+    OR(
+         CONTAINS(Hotel_Name__r.Name , &quot;Hotel&quot;),
+         CONTAINS(Hotel_Name__r.Name , &quot;HOTEL&quot;),
+         CONTAINS(Hotel_Name__r.Name , &quot;hotel&quot;),
+         CONTAINS(Hotel_Name__r.Name , &quot;Resort&quot;),
+         CONTAINS(Hotel_Name__r.Name , &quot;RESORT&quot;),
+         CONTAINS(Hotel_Name__r.Name , &quot;resort&quot;),
+         CONTAINS(Hotel_Name__r.Name , &quot;Inn&quot;),
+         CONTAINS(Hotel_Name__r.Name , &quot;INN&quot;),
+         CONTAINS(Hotel_Name__r.Name , &quot;inn&quot;)
+       )
+)</errorConditionFormula>
+    <errorMessage>Please select a &quot;Hotel&quot; or &quot;Resort&quot; or &quot;Inn&quot;</errorMessage>
+</ValidationRule>

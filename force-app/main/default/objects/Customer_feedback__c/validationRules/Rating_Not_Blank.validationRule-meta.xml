@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rating_Not_Blank</fullName>
+    <active>true</active>
+    <description>Rating In customer feedback cannot be left blank.</description>
+    <errorConditionFormula>ISBLANK(Cleaning_service_Remarks__c) || 
+ISBLANK(Food_Quality_Rating__c) || 
+ISBLANK(Overall_Rating_of_the_hotel__c) || 
+ISBLANK(Payment_procedure_and_see_off__c) || 
+ISBLANK(welcome_and_Hospitality_Service_Rating__c)</errorConditionFormula>
+    <errorMessage>Rating Can&apos;t be Blank</errorMessage>
+</ValidationRule>

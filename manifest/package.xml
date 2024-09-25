@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+   <!-- Retrieve the main app -->
+   <types>
+      <members>Abhinav</members> <!-- Replace this with your app's API name -->
+      <name>CustomApplication</name>
+   </types>
+
+   <!-- Retrieve any custom objects related to the app -->
+   <types>
+      <members>Hotel_Booking__c</members> <!-- Example custom object -->
+      <members>Room__c</members> <!-- Example custom object -->
+      <members>Vehicle_Information__c</members>
+      <members>Customer_feedback__c</members>
+      <name>CustomObject</name>
+    </types>
+
+    <types>
+      <members>Account</members> <!-- Standard Object -->
+      <members>Contact</members>
+      <members>Case</members>
+      <name>CustomObject</name>
+   </types>
+
+    <types>
+      <members>feedback_to_case</members>
+      <name>ApexTrigger</name>
+    </types>
+
+    <types>
+      <members>Customer_feedback__c.Checkout_check_box</members> <!-- Customer feedback -->
+      <members>Customer_feedback__c.Hotel_Name</members> <!-- Customer feedback -->
+      <members>Customer_feedback__c.Rating_Not_Blank</members> <!-- Customer feedback -->
+      <members>Customer_feedback__c.Rating_range</members> <!-- Customer feedback -->
+      <members>Hotel_Booking__c.Only_hotel</members><!-- Hotel Booking -->
+      <members>Room__c.Hotel_Name</members> <!-- Room -->
+      <name>ValidationRule</name>
+   </types>
+
+    <types>
+      <members>HotelBookingReports/All_Customer_Satisfaction_index_C_Yr_5Ir</members>  <!-- all customer satisfaction -->
+      <members>HotelBookingReports/High_Customer_Satisfaction_index_CYr_enU</members>
+      <members>HotelBookingReports/Low_Customer_Satisfaction_index_Yr_E9w</members>
+      <members>HotelBookingReports/Total_Remarks_with_Max_possible_iKh</members>
+      <members>HotelBookingReports/Vehicles_Parking_C_Yr_muv</members>
+      <members>HotelBookingReports/Rooms_booked_C_Yr_P6m</members>
+      <name>Report</name>
+   </types>
+
+   <types>
+      <members>HotelBookingDashboards</members>
+      <members>HotelBookingDashboards/LjzqpgkFPdZrySorlCmgnLNjxffBBz</members>
+      <members>HotelBookingDashboards/nChEVpEhvMazferxhNeBxQFZvFejKZ</members>
+      <members>HotelBookingDashboards/zAjzzjLIuIJaPNZAlfbtpDMxNauvCC</members>
+      <members>SalesforceAdoptionDashboards</members>
+      <members>SalesforceAdoptionDashboards/X1_User_Adoption_Logins</members>
+      <members>SalesforceAdoptionDashboards/X2_Key_Feature_Adoption</members>
+      <members>SalesforceAdoptionDashboards/X3_Sales_Marketing_Adoption</members>
+      <name>Dashboard</name>
+   </types>
+
+   <types>
+      <members>HotelBookingReports</members>  <!-- Retrieve the folder itself -->
+      <name>ReportFolder</name>
+   </types>
+
+   <types>
+      <members>HotelBookingDashboards</members>  <!-- Retrieve the dashboard folder -->
+      <name>DashboardFolder</name>
+   </types>
+
+   <types>
+      <members>Hotel_booking_App_Page</members>
+      <members>Hotel_Booking_Home_Page</members>
+      <members>Hotel_Booking_UtilityBar</members>
+      <name>FlexiPage</name>
+   </types>
+
+   <types>
+      <members>guest_id_type</members>
+      <name>GlobalValueSet</name>
+   </types>
+
+   <types>
+      <members>Account-Account %28Marketing%29 Layout</members>
+      <members>Account-Account %28Sales%29 Layout</members>
+      <members>Account-Account %28Support%29 Layout</members>
+      <members>Account-Account Layout</members>
+      <members>Customer-Customer Layout</members>
+      <members>Customer_feedback__c-Customer feedback Layout</members>
+      <members>Hotel_Booking__c-Hotel Booking Layout</members>
+      <members>Room__c-Room Layout</members>
+      <members>Vehicle_Information__c-Vehicle Information Layout</members>
+      <name>Layout</name>
+   </types>
+
+   <types>
+      <members>Hotel_Booking__c.New_Booking_Record_Type</members>
+      <name>RecordType</name>
+   </types>
+
+   <types>
+      <members>Account</members>
+      <members>Case</members>
+      <members>Contact</members>
+      <members>Customer_feedback__c</members>
+      <members>Hotel_Booking__c</members>
+      <members>Room__c</members>
+      <members>Vehicle_Information__c</members>
+      <name>SharingRules</name>
+  </types>
+
+  <types>
+      <members>Account</members>  
+      <members>Case</members>      
+      <members>Contact</members>      
+      <members>Customer_feedback__c</members>      
+      <members>Hotel_Booking__c</members>      
+      <members>Room__c</members>      
+      <members>Vehicle_Information__c</members>    
+      <name>TopicsForObjects</name>
+   </types>
+
+   <version>61.0</version> <!-- API version, ensure it's compatible with your org -->
+</Package>
